@@ -17,9 +17,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"golang.org/x/mobile/internal/importers"
-	"golang.org/x/mobile/internal/importers/java"
-	"golang.org/x/mobile/internal/importers/objc"
+	"github.com/ooni/oomobile/internal/importers"
+	"github.com/ooni/oomobile/internal/importers/java"
+	"github.com/ooni/oomobile/internal/importers/objc"
 	"golang.org/x/tools/go/packages"
 )
 

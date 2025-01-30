@@ -7,10 +7,10 @@
 package app
 
 import (
-	"golang.org/x/mobile/event/lifecycle"
-	"golang.org/x/mobile/event/size"
-	"golang.org/x/mobile/gl"
-	_ "golang.org/x/mobile/internal/mobileinit"
+	"github.com/ooni/oomobile/event/lifecycle"
+	"github.com/ooni/oomobile/event/size"
+	"github.com/ooni/oomobile/gl"
+	_ "github.com/ooni/oomobile/internal/mobileinit"
 )
 
 // Main is called by the main.main function to run the mobile application.
@@ -30,7 +30,7 @@ type App interface {
 	//  - paint.Event
 	//  - size.Event
 	//  - touch.Event
-	// from the golang.org/x/mobile/event/etc packages. Other packages may
+	// from the github.com/ooni/oomobile/event/etc packages. Other packages may
 	// define other event types that are carried on this channel.
 	Events() <-chan interface{}
 

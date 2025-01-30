@@ -11,13 +11,13 @@ import (
 	"log"
 	"net"
 
-	"golang.org/x/mobile/app"
-	"golang.org/x/mobile/app/internal/apptest"
-	"golang.org/x/mobile/event/lifecycle"
-	"golang.org/x/mobile/event/paint"
-	"golang.org/x/mobile/event/size"
-	"golang.org/x/mobile/event/touch"
-	"golang.org/x/mobile/gl"
+	"github.com/ooni/oomobile/app"
+	"github.com/ooni/oomobile/app/internal/apptest"
+	"github.com/ooni/oomobile/event/lifecycle"
+	"github.com/ooni/oomobile/event/paint"
+	"github.com/ooni/oomobile/event/size"
+	"github.com/ooni/oomobile/event/touch"
+	"github.com/ooni/oomobile/gl"
 )
 
 func main() {

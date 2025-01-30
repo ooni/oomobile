@@ -4,8 +4,8 @@
 
 // Package paint defines an event for the app being ready to paint.
 //
-// See the golang.org/x/mobile/app package for details on the event model.
-package paint // import "golang.org/x/mobile/event/paint"
+// See the github.com/ooni/oomobile/app package for details on the event model.
+package paint // import "github.com/ooni/oomobile/event/paint"
 
 // Event indicates that the app is ready to paint the next frame of the GUI.
 //

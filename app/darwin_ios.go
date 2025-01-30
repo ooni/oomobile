@@ -29,11 +29,11 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/mobile/event/lifecycle"
-	"golang.org/x/mobile/event/paint"
-	"golang.org/x/mobile/event/size"
-	"golang.org/x/mobile/event/touch"
-	"golang.org/x/mobile/geom"
+	"github.com/ooni/oomobile/event/lifecycle"
+	"github.com/ooni/oomobile/event/paint"
+	"github.com/ooni/oomobile/event/size"
+	"github.com/ooni/oomobile/event/touch"
+	"github.com/ooni/oomobile/geom"
 )
 
 var initThreadID uint64

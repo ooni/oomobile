@@ -1,13 +1,13 @@
 # Go support for Mobile devices
 
-[![Go Reference](https://pkg.go.dev/badge/golang.org/x/mobile.svg)](https://pkg.go.dev/golang.org/x/mobile)
+[![Go Reference](https://pkg.go.dev/badge/github.com/ooni/oomobile.svg)](https://pkg.go.dev/github.com/ooni/oomobile)
 
 The Go mobile repository holds packages and build tools for using Go on mobile platforms.
 
 Package documentation as a starting point:
 
-- [Building all-Go apps](https://golang.org/x/mobile/app)
-- [Building libraries for SDK apps](https://golang.org/x/mobile/cmd/gobind)
+- [Building all-Go apps](https://github.com/ooni/oomobile/app)
+- [Building libraries for SDK apps](https://github.com/ooni/oomobile/cmd/gobind)
 
 ![Caution image](doc/caution.png)
 
@@ -19,8 +19,8 @@ This is early work and installing the build system requires Go 1.5.
 Follow the instructions on
 [golang.org/wiki/Mobile](https://golang.org/wiki/Mobile)
 to install the gomobile command, build the
-[basic](https://golang.org/x/mobile/example/basic)
-and the [bind](https://golang.org/x/mobile/example/bind) example apps.
+[basic](https://github.com/ooni/oomobile/example/basic)
+and the [bind](https://github.com/ooni/oomobile/example/bind) example apps.
 
 --
 

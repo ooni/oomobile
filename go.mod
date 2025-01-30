@@ -1,4 +1,4 @@
-module golang.org/x/mobile
+module github.com/ooni/oomobile
 
 go 1.22.0
 

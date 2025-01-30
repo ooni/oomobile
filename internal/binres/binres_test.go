@@ -18,7 +18,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/mobile/internal/sdkpath"
+	"github.com/ooni/oomobile/internal/sdkpath"
 )
 
 func init() {

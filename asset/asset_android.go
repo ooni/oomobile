@@ -38,7 +38,7 @@ import (
 	"sync"
 	"unsafe"
 
-	"golang.org/x/mobile/internal/mobileinit"
+	"github.com/ooni/oomobile/internal/mobileinit"
 )
 
 var assetOnce sync.Once
