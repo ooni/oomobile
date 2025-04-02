@@ -1,6 +1,6 @@
 module github.com/ooni/oomobile
 
-go 1.23.4
+go 1.23.0
 
 // The modern go/types type checker produces types.Alias
 // types for the explicit representation of type aliases.
@@ -16,14 +16,14 @@ go 1.23.4
 godebug gotypesalias=0
 
 require (
-	golang.org/x/exp/shiny v0.0.0-20230817173708-d852ddb80c63
-	golang.org/x/image v0.23.0
-	golang.org/x/mod v0.22.0
-	golang.org/x/sync v0.10.0
-	golang.org/x/tools v0.29.0
+	golang.org/x/exp/shiny v0.0.0-20250305212735-054e65f0b394
+	golang.org/x/image v0.25.0
+	golang.org/x/mod v0.24.0
+	golang.org/x/sync v0.12.0
+	golang.org/x/tools v0.31.0
 )
 
 require (
-	golang.org/x/mobile v0.0.0-20201217150744-e6ae53a27f4f // indirect
-	golang.org/x/sys v0.29.0 // indirect
+	golang.org/x/mobile v0.0.0-20250305212854-3a7bc9f8a4de // indirect
+	golang.org/x/sys v0.31.0 // indirect
 )
