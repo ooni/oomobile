@@ -7,7 +7,7 @@ go 1.23.0
 // (Initial opt-in support for it was added in Go 1.22,
 // and it became the default behavior in Go 1.23.)
 //
-// TODO(go.dev/issue/70698): Update the golang.org/x/mobile/bind
+// TODO(go.dev/isue/70698): Update the golang.org/x/mobile/bind
 // code generator for the new behavior and delete this temporary¹
 // forced pre-1.23 go/types behavior.
 //
@@ -16,7 +16,7 @@ go 1.23.0
 godebug gotypesalias=0
 
 require (
-	golang.org/x/exp/shiny v0.0.0-20230817173708-d852ddb80c63
+	golang.org/x/exp/shiny v0.0.0-20250305212735-054e65f0b394
 	golang.org/x/image v0.25.0
 	golang.org/x/mod v0.24.0
 	golang.org/x/sync v0.12.0
@@ -24,6 +24,5 @@ require (
 )
 
 require (
-	golang.org/x/mobile v0.0.0-20250305212854-3a7bc9f8a4de // indirect
 	golang.org/x/sys v0.31.0 // indirect
 )
