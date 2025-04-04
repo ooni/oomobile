@@ -16,7 +16,7 @@ go 1.23.0
 godebug gotypesalias=0
 
 require (
-	golang.org/x/exp/shiny v0.0.0-20250305212735-054e65f0b394
+	golang.org/x/exp/shiny v0.0.0-20230817173708-d852ddb80c63
 	golang.org/x/image v0.25.0
 	golang.org/x/mod v0.24.0
 	golang.org/x/sync v0.12.0
