@@ -166,23 +166,15 @@ func buildJavaSO(outputDir string, arch string) error {
 
 	// Javaify the arch descriptors
 	if arch == "arm64" {
-		switch osname {
-		case "linux":
+		if osname == "linux" {
 			env = append(env, "CC=aarch64-linux-gnu-gcc")
-		case "windows":
-			env = append(env, "CC=clang")
-			env = append(env, "CGO_CFLAGS=-target aarch64-windows-gnu")
-			env = append(env, "CGO_LDFLAGS=-target aarch64-windows-gnu")
+			// env = append(env, "CC=clang")
 		}
 	}
 	if arch == "amd64" {
-		switch osname {
-		case "linux":
+		if osname == "linux" {
 			env = append(env, "CC=x86_64-linux-gnu-gcc")
-		case "windows":
-			env = append(env, "CC=clang")
-			env = append(env, "CGO_CFLAGS=-target x86_64-windows-gnu")
-			env = append(env, "CGO_LDFLAGS=-target x86_64-windows-gnu")
+			// env = append(env, "CC=clang")
 		}
 	}
 	if err := goBuildAt(
