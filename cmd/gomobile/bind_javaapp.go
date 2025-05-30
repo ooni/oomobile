@@ -177,12 +177,23 @@ func buildJavaSO(outputDir string, arch string) error {
 			// env = append(env, "CC=clang")
 		}
 	}
+
+	baseOutputPath := filepath.Join(outputDir, "src", "main", "jniLibs", arch)
+	outputFile := filepath.Join(baseOutputPath, "libgojni.so")
+
+	switch runtime.GOOS {
+	case "darwin":
+		outputFile = filepath.Join(baseOutputPath, "libgojni.dylib")
+	case "windows":
+		outputFile = filepath.Join(baseOutputPath, "libgojni.dll")
+	}
+
 	if err := goBuildAt(
 		srcDir,
 		"./gobind",
 		env,
 		"-buildmode=c-shared",
-		"-o="+filepath.Join(outputDir, "src", "main", "jniLibs", arch, "libgojni.so"),
+		"-o="+outputFile,
 	); err != nil {
 		return err
 	}
