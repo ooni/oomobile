@@ -191,7 +191,7 @@ func buildJavaSO(outputDir string, arch string) error {
 
 	switch osname {
 	case "darwin":
-		outputFile = filepath.Join(baseOutputPath, "libgojni.dylib")
+		outputFile = filepath.Join(baseOutputPath, "gojni.dylib")
 	case "windows":
 		outputFile = filepath.Join(baseOutputPath, "libgojni.dll")
 	}
