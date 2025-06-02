@@ -48,11 +48,11 @@ public class Seq {
 
 			String libName;
 	        if (osName.contains("win")) {
-	            libName = "gojni.dll";
+	            libName = "/gojni.dll";
 	        } else if (osName.contains("mac")) {
-	            libName = "libgojni.dylib";
+	            libName = "/libgojni.dylib";
 	        } else {
-	            libName = "libgojni.so";
+	            libName = "/libgojni.so";
 	        }
 
 			try {
