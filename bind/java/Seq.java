@@ -46,7 +46,7 @@ public class Seq {
 				arch = "amd64";
 			}
 
-			 String libName;
+			String libName;
         	if (osName.contains("win")) {
             	libName = "gojni.dll";
         	} else if (osName.contains("mac")) {
