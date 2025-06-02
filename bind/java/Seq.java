@@ -47,13 +47,13 @@ public class Seq {
 			}
 
 			String libName;
-	        	if (osName.contains("win")) {
-	            	libName = "gojni.dll";
-	        	} else if (osName.contains("mac")) {
-	            	libName = "libgojni.dylib";
-	        	} else {
-	            	libName = "libgojni.so";
-	        	}
+	        if (osName.contains("win")) {
+	            libName = "gojni.dll";
+	        } else if (osName.contains("mac")) {
+	            libName = "libgojni.dylib";
+	        } else {
+	            libName = "libgojni.so";
+	        }
 
 			try {
 				NativeUtils.loadLibraryFromJar("/jniLibs/" + arch + libName);
