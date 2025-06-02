@@ -37,14 +37,26 @@ public class Seq {
 		if ("The Android Project".equals(System.getProperty("java.vendor"))) {
 			System.loadLibrary("gojni");
 		} else {
+			String osName = System.getProperty("os.name").toLowerCase();
 			String arch = System.getProperty("os.arch");
+			
 			if ("aarch64".equals(arch)) {
 				arch = "arm64";
 			} else if ("x86_64".equals(arch)) {
 				arch = "amd64";
 			}
+
+			String libName;
+	        if (osName.contains("win")) {
+	            libName = "gojni.dll";
+	        } else if (osName.contains("mac")) {
+	            libName = "libgojni.dylib";
+	        } else {
+	            libName = "libgojni.so";
+	        }
+
 			try {
-				NativeUtils.loadLibraryFromJar("/jniLibs/" + arch + "/libgojni.so");
+				NativeUtils.loadLibraryFromJar("/jniLibs/" + arch + libName);
 			} catch (Exception e) {
 				throw new RuntimeException(e);
 			}
