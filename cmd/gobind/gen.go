@@ -110,8 +110,8 @@ func genPkg(lang string, p *types.Package, astFiles []*ast.File, allPkg []*types
 				errorf("unable to import bind/java: %v", err)
 				return
 			}
-			copyFile(filepath.Join("src", "gobind", "seq_java.c"), filepath.Join(javaDir, "seq_android.c.support"))
-			copyFile(filepath.Join("src", "gobind", "seq_java.go"), filepath.Join(javaDir, "seq_android.go.support"))
+			copyFile(filepath.Join("src", "gobind", "seq_java.c"), filepath.Join(javaDir, "seq_java.c.support"))
+			copyFile(filepath.Join("src", "gobind", "seq_java.go"), filepath.Join(javaDir, "seq_java.go.support"))
 			copyFile(filepath.Join("src", "gobind", "seq_java.h"), filepath.Join(javaDir, "seq_java.h"))
 		}
 	case "go":
