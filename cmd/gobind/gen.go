@@ -112,7 +112,7 @@ func genPkg(lang string, p *types.Package, astFiles []*ast.File, allPkg []*types
 			}
 			copyFile(filepath.Join("src", "gobind", "seq_java.c"), filepath.Join(javaDir, "seq_android.c.support"))
 			copyFile(filepath.Join("src", "gobind", "seq_java.go"), filepath.Join(javaDir, "seq_android.go.support"))
-			copyFile(filepath.Join("src", "gobind", "seq_java.h"), filepath.Join(javaDir, "seq_android.h"))
+			copyFile(filepath.Join("src", "gobind", "seq_java.h"), filepath.Join(javaDir, "seq_java.h"))
 		}
 	case "go":
 		w, closer := writer(filepath.Join("src", "gobind", fname))
