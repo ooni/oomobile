@@ -19,9 +19,9 @@
 #define NULL_REFNUM 41
 
 #ifndef __GOBIND_ANDROID__
-#include <android/log.h>
 #define ACT_ENV_CAST (void**)
 #else
+#include <android/log.h>
 #define ACT_ENV_CAST
 #endif
 
