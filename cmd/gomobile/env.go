@@ -229,7 +229,7 @@ func envInit() (err error) {
 			"GOARCH=" + arch,
 			"CGO_ENABLED=1",
 			"GOFLAGS=" + "-tags=" + strings.Join(platformTags("java"), ","),
-			"CGO_CFLAGS=\"-I" + javaHome + "/include/\" \"-I" + javaHome + "/include/" + osname + "\" + \"-I" + javaHome + "/include/win32/\"",
+			"CGO_CFLAGS=\"-I" + javaHome + "/include/\" \"-I" + javaHome + "/include/" + osname + "/\" + \"-I" + javaHome + "/include/win32/\"",
 		}
 	}
 
