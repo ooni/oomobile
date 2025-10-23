@@ -27,8 +27,8 @@ func goJavaBind(gobind string, pkgs []*packages.Package, targets []targetInfo) e
 		"-outdir="+tmpdir,
 	)
 	if len(buildTags) > 0 {
-		tags := append(buildTags[:], platformTags("java")...)
-		cmd.Args = append(cmd.Args, "-tags="+strings.Join(tags, ","))
+		buildTags = append(buildTags[:], platformTags("java")...)
+		cmd.Args = append(cmd.Args, "-tags="+strings.Join(buildTags, ","))
 	}
 	if bindJavaPkg != "" {
 		cmd.Args = append(cmd.Args, "-javapkg="+bindJavaPkg)

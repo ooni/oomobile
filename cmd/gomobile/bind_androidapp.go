@@ -33,8 +33,8 @@ func goAndroidBind(gobind string, pkgs []*packages.Package, targets []targetInfo
 	cmd.Env = append(cmd.Env, "GOOS=android")
 	cmd.Env = append(cmd.Env, "CGO_ENABLED=1")
 	if len(buildTags) > 0 {
-		tags := append(buildTags[:], platformTags("android")...)
-		cmd.Args = append(cmd.Args, "-tags="+strings.Join(tags, ","))
+		buildTags = append(buildTags, platformTags("android")...)
+		cmd.Args = append(cmd.Args, "-tags="+strings.Join(buildTags, ","))
 	}
 	if bindJavaPkg != "" {
 		cmd.Args = append(cmd.Args, "-javapkg="+bindJavaPkg)
